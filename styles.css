@@ -1,0 +1,108 @@
+:root{
+  /* Mobile: 375px */
+  /* Desktop: 1440px */
+
+  /* Colors */
+  /* Primary */
+  --Tomato: hsl(4, 100%, 67%);
+  /* Neutral */
+  --DarkSlateGrey: hsl(234, 29%, 20%);
+  --CharcoalGrey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Font */
+  --DefaultFonttype: Roboto;
+  --DefaultFontsize: 16px;
+  --Fontweight1: 400;
+  --Fontweight2: 600;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--DefaultFonttype);
+  font-size: var(--DefaultFontsize);
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--CharcoalGrey);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--DarkSlateGrey);
+  /* font-weight: var(--Fontweight1); */
+}
+
+.maincontainer{
+  background-color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 25px;
+  border-radius: 40px;
+}
+
+.contextside{
+  width: 400px;
+  /* border: solid red 2px; */
+  margin-left: 40px;
+  margin-right: 45px;
+
+}
+.title{
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+.statment{
+  margin-bottom: 25px;
+  font-weight: var(--Fontweight1);
+  line-height: 25px;
+}
+
+.contextside ul{
+  list-style-type: none;
+  margin-bottom: 30px;
+  /* border: solid blue 2px; */
+
+}
+
+.contextside ul li img{
+  width: 20px;
+  margin-right: 15px;
+}
+
+.contextside ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.emailtitle{
+  font-size: 13px;
+  font-weight: var(--Fontweight2);
+  margin-bottom: 10px;
+}
+
+.email, button{
+  width: 100%;
+  padding: 18px;
+  border-radius: 6px;
+  /* border: none; */
+}
+
+.email{
+  border: solid 1px var(--Grey);
+  margin-bottom: 25px;
+}
+
+button{
+  background-color: var(--DarkSlateGrey);
+  font-size: var(--Fontweight2);
+  color: var(--White);
+}
